@@ -2066,9 +2066,18 @@ TARGET_DEVICES += zyxel_wap6805
 
 define Device/zte_e8820s
   IMAGE_SIZE := 32448k
-  DEVICE_VENDOR := zte
+  DEVICE_VENDOR := ZTE
   DEVICE_MODEL := e8820s
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb3 \
 	kmod-usb-ledtrig-usbport -uboot-envtools
 endef
 TARGET_DEVICES += zte_e8820s
+
+define Device/zte_e8820v2
+  IMAGE_SIZE := 32448k
+  DEVICE_VENDOR := ZTE
+  DEVICE_MODEL := e8820v2
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb3 \
+	kmod-usb-ledtrig-usbport -uboot-envtools
+endef
+TARGET_DEVICES += zte_e8820v2
